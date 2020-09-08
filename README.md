@@ -24,3 +24,4 @@ Hot-swap circuits        | one in each foot | Each foot includes a circuit that 
 Display                  | [Adafruit 2.0" IPS display](https://www.adafruit.com/product/4311) | A 320x 240 IPS TFT display connected on SPI with console support
 Camera                   | Two [HBV-1517](https://www.amazon.co.uk/Camera-Module-HBV-1517-Wide-Angle-Install/dp/B07V9H7Z49) | Max resolution 1280 x 1024, USB connected directly to Raspberry Pi
 WiFi                     | Built-in 5Ghz frequency -WiFi and second dongle | The built in configures a low-latency (5GHz band) Access Point (AP) and the second Wi-Fi can connect to an exiting infrastructure. It is especially efficient for running distributed ROS nodes.
+Software                 | ROS Neotic | robot packages available [here](https://github.com/sonelu/mh5_robot)
