@@ -60,6 +60,6 @@ There are a number of exciting upgrades to the platform that we expect to delive
 Area   | Improvement
 -------|-------------|
 ~~Vision~~ | ~~Updated cameras with 100 degrees FoV and more fps options~~
-Foot Sensors | Soles with 4 force sensing resistors (FSR) for accurate positioning of the CoM. Information is exchanged over the Dynamixel bus.
+[Foot Sensors](https://github.com/sonelu/SPR2010) | Soles with 4 force sensing resistors (FSR) for accurate positioning of the CoM. Information is exchanged over the Dynamixel bus.
 ~~Battery Management~~ | ~~There is currently in development an improved version of the hot-swap electronics that will include low-battery buzzer and cutoff for battery protection.~~
 Display    | Increase size of display to 2.8 inch to improve readability
