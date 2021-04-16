@@ -28,7 +28,7 @@ Head Actuators           | 1 x 2XL430 | one [2XL430-W250](https://emanual.roboti
 
 Parameter | Value | Comments
 ----------|-------|----------
-Batteries                    | 2 x 2500mAh LiPo batteries | Batteries are located in the feet and are hot-swap; there is no need to turn off the main controller to change the batteries
+Batteries                    | 2 x 2500mAh 3S LiPo batteries | Batteries are located in the feet and are hot-swap; there is no need to turn off the main controller to change the batteries
 External power           | 2.5mm power jack 12V       | Optionally the robot can be powered with a 12V power adapter using a standard 2.5mm barrel jack
 Autonomy                 | 3 hours | (preliminary estimates)
 Monitoring               | voltage | ADC used to provide reading for Dynamixel bus voltage, 5V railing and 3.3V railing.
