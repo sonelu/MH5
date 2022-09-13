@@ -51,7 +51,7 @@ Bluetooth                | Builtin Bluetooth 5.0 BLE | [Bluetooth keyboard](http
 Parameter | Value | Comments
 ----------|-------|----------
 OS        | Raspbian (Debian Buster) | Kernel drivers added for:<br>- SC16IS762 (SPI to UART dual bus used for Dynamixel actuators)<br>- ST7789V (TFT display)<br>- WM8960 (sound)<br>- ADS1015 (for voltage monitoring ADC)<br>- fan_control
-Software                 | ROS Neotic | ROS Neotic is installed from source using the "robot" distro
+Software                 | ROS Noetic | ROS Noetic is installed using [RoboStack](https://github.com/RoboStack/ros-noetic)
 Custom ROS packages      |[here](https://github.com/sonelu/mh5_robot) | - Dynamixel controller<br>- UI for robot TFT<br>- URDF with support for RViz and Gazebo<br>- "director" package that that process scripted moves<br>- vision (in progress)
 
 ## Future plans
