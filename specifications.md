@@ -37,12 +37,11 @@ Monitoring               | voltage | ADC used to provide reading for Dynamixel b
 
 Parameter | Value | Comments
 ----------|-------|----------
-Main controller          | Raspberry Pi 4 4GB RAM
+Main controller          | Raspberry Pi CM4 8GB RAM | We use the [Waveshare CM4 IO Board A](https://www.waveshare.com/cm4-io-base-a.htm) to expand the peripherals. 
 Add on board             | [Robotics HAT for Raspberry Pi](https://github.com/sonelu/SPR2005) | The board includes:<br>1. high speed dual Dynamixel bus<br>2. IMU (Gyroscope and Accelerometer)<br>3. 5V 3A power switch for RPi<br>4. ADC for monitoring power<br>5. WM8960 codec with stereo mics and speakers 2 x 1W output<br>6. PWM fan control<br>7. USB to UART converter for direct USB console access for RPi
-Hot-swap circuits        | one in each foot | Each foot includes a circuit that implements an ideal diode and allows the LiPo batteries to be hot-swapped without damage to the cables or the main controller, low-voltage alarm and emergency shutdown for ultra-low voltage to protect the batteries.
-Display                  | [Adafruit 2.0" IPS display](https://www.adafruit.com/product/4311) | A 2.0'' 320x 240 IPS TFT display connected on SPI with console support
-Foot Sensors             | [SPR2010](https://github.com/sonelu/SPR2010) | Soles with 4 force sensing resistors (FSR) for accurate positioning of the CoM. Information is exchanged over the Dynamixel bus.
-Camera                   | Two [HBV-1716HD](https://www.banggood.com/HBV-1716HD-2MP-OV2710-HD-1080P-CMOS-Camera-Module-with-USB-Interface-Free-Driver-Fixed-Focus-100-Degree-p-1709172.html?cur_warehouse=CN) | Max resolution 1920 x 1080, USB connected directly to Raspberry Pi, field of view 60 degrees
+Foot sensors             | [SPR2010](https://github.com/sonelu/SPR2010) | Each foot includes a circuit that:<br>1. ideal diode allowing LiPo batteries hot-swap<br>2. battery voltage and current monitoring with 4 LED level indicator, low voltage buzzer and very low voltage cut-off<br>3. four force sensing resistors (FSR) for accurate positioning of the CoM<br>4. Dynamixel bus communication interface up to 2Mbs
+Display                  | [Waveshare 2.4" TFT display](https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-3/2.4inch-lcd-module.htm) | A 2.4'' 320x 240 TFT display connected on SPI with console support
+Camera                   | Two [RPi FPC Cameras MIni Size](https://www.waveshare.com/product/raspberry-pi/cameras/rpi-fpc-camera.htm) | Connected on the two CSI camera connectors on the IO Board, 69.8 degree FoV, max 1080p30
 WiFi                     | Built-in 5Ghz frequency -WiFi and second dongle | The built in configures a low-latency (5GHz band) Access Point (AP) and the second Wi-Fi can connect to an exiting infrastructure. It is especially efficient for running distributed ROS nodes
 Bluetooth                | Builtin Bluetooth 5.0 BLE | [Bluetooth keyboard](https://www.amazon.co.uk/Rii-Mini-Bluetooth-Wireless-Keyboard-Black/dp/B010WMB6DK/) for remote control and interface navigation.
 
@@ -60,6 +59,5 @@ There are a number of exciting upgrades to the platform that we expect to delive
 
 Area   | Improvement
 -------|-------------|
-Display    | Increase size of display to 2.8 inch to improve readability
-Controller | Switch to [Raspberry PI CM4](https://www.raspberrypi.org/products/compute-module-4/?variant=raspberry-pi-cm4001000); main HAT redesign.
 2nd Controller | Add a second controller Raspberry Pi CM4 in the head for vision processing with dedicated add-on board for cameras, power, fan and console access.
+Coral support  | Integrate a Coral Board M.2 ([B+M version](https://coral.ai/products/m2-accelerator-bm)) using the M-key connector on the Waveshare IO Board
